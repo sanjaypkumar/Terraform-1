@@ -1,1 +1,5 @@
-g
+Terraform statefile : State file verify or monitor desired state to current state
+                       (statefile mounitor and update the resources files here)
+
+Terraform show : To see the Terraform State file Information in command line interface we this cmd.
+
