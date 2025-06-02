@@ -1,4 +1,4 @@
-variable "mybucket" {
-  type    = string
-  default = "lcm-hyd-bucket"
-}
+//variable "mybucket" {
+// type    = string
+// default = "lcm-hyd-bucket"
+//}
