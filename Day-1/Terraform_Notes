@@ -3,3 +3,4 @@ Terraform statefile : State file verify or monitor desired state to current stat
 
 Terraform show : To see the Terraform State file Information in command line interface we this cmd.
 
+
