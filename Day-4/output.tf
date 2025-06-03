@@ -11,8 +11,8 @@ output "instance_private_ip" {
 }
 
 output "instance_private_dns" {
-
   value = aws_instance.test.private_dns
+  
 }
 
 output "instance_public_dns" {
