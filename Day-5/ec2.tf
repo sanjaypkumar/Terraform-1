@@ -19,14 +19,15 @@ data "aws_ami" "amzlinux" {
   }
 }
 
+# Create EC2 Instance in respective new vpc, new subnet created above with a static key pair, associate Security group created # earlier
 
 resource "aws_instance" "linux" {
-  ami               = data.aws_ami.amzlinux.id
-  instance_type     = "t2.micro"
+  ami                         = data.aws_ami.amzlinux.id
+  instance_type               = "t2.micro"
   associate_public_ip_address = true
-  key_name          = "linux"
-  subnet_id         = aws_subnet.dev_subnet.id
-  availability_zone = "ap-south-1a"
-  security_groups   = [aws_security_group.dev_sg.id]
-  user_data = file("httpd.sh")
+  key_name                    = "linux"
+  subnet_id                   = aws_subnet.dev_subnet.id
+  availability_zone           = "ap-south-1a"
+  security_groups             = [aws_security_group.dev_sg.id]
+  user_data                   = file("httpd.sh")
 }

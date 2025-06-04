@@ -79,5 +79,5 @@ resource "aws_security_group" "dev_sg" {
   }
 
 }
-# Create EC2 Instance in respective new vpc, new subnet created above with a static key pair, associate Security group created earlier
+
 
