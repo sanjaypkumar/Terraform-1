@@ -3,4 +3,20 @@ Terraform statefile : State file verify or monitor desired state to current stat
 
 Terraform show : To see the Terraform State file Information in command line interface we this cmd.
 
+Terraform output : to check the Terraform output in the command line interface without open the cloud.
+Terraform output p_ip : To check the public ip address of the ec2 instance
+
+Create Networking:
+==================
+
+Create VPC
+Create Subnet
+Create Internet Gateway and attached to VPC
+Create Route Table
+Create Route in Route Table for Internet Access
+Associate Route Table with Subnet
+Create Security Group in the VPC with port 80, 22 as inbound open
+Create EC2 Instance in respective new vpc, new subnet created above with a static key pair, associate Security group created earlier
+Create ebs volume and attcje to ec2
+Use depends_on Resource Meta-Argument attribute when ebs volume
 
