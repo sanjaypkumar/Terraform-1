@@ -25,7 +25,6 @@ resource "aws_subnet" "dev_subnet" {
 resource "aws_internet_gateway" "dev_ig" {
   vpc_id = aws_vpc.dev_vpc.id
 
-
 }
 
 # Create Route Table and # Create Route in Route Table for Internet Access
