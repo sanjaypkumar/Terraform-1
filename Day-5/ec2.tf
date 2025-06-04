@@ -1,3 +1,4 @@
+#data source to created dynamic linux image
 data "aws_ami" "amzlinux" {
   most_recent = true
   owners      = ["amazon"]
