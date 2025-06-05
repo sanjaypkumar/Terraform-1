@@ -10,6 +10,7 @@ resource "aws_instance" "test" {
   }
 
 # lifecycle is used to controll the action of state and ec2 instance destory
+
  lifecycle {
    create_before_destroy = true
  }
