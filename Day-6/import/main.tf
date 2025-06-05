@@ -8,7 +8,9 @@ resource "aws_instance" "import" {
   ami = "ami-0f535a71b34f2d44a"
   instance_type = "t3.micro"
   availability_zone = "ap-south-1a"
+
   tags = {
     Name = "ec2_import"
   }
+  
 }
